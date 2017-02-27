@@ -1,0 +1,30 @@
+{
+  "name": "blue-select",
+  "version": "1.0.0",
+  "description": "A simple styled/custom html select class implementation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Simon Buerger",
+    "url": "https://twitter.com/simonbuerger"
+  },
+  "license": "MIT",
+  "issues": "http://github.com/bluegrassdigital/blue-select/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluegrassdigital/blue-select.git"
+  },
+  "keywords": [
+    "custom-select",
+    "select",
+    "blue-widgets"
+  ],
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "standard-loader": "^5.0.0",
+    "webpack": "^2.2.1"
+  }
+}
