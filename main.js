@@ -10,7 +10,6 @@ function CustomSelect (el) {
 
   this.el = el
   this.select = el.querySelector('select')
-  this.opts = this.select.querySelectorAll('option')
 
   this.selectValue = document.createElement('div')
   this.selectValue.className = block + '__value'
@@ -52,7 +51,7 @@ CustomSelect.prototype.onBlur = function () {
  * Get the actual text value of the selected option
  */
 CustomSelect.prototype.getSelectedOptionText = function () {
-  return this.opts[this.select.selectedIndex].textContent
+  return this.select.querySelectorAll('option')[this.select.selectedIndex].textContent
 }
 /**
  * Set/update the 'fake' value of the select
