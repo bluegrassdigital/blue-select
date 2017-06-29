@@ -1,4 +1,15 @@
 'use strict'
+
+function splitClass (str) {
+  return str.replace(/ {1,}/g, ',').split(',')
+}
+
+function filterClass (str, cls) {
+  return splitClass(str).filter(function (match) {
+    return match !== cls && match !== ''
+  }).join(' ')
+}
+
 /**
  * Generates a basic custom select box
  * @class
@@ -39,13 +50,15 @@ CustomSelect.prototype.onChange = function () {
  * onFocus event handler
  */
 CustomSelect.prototype.onFocus = function () {
-  this.el.classList.add('is-focused')
+  var hasClass = splitClass(this.el.className).indexOf('is-focused') > -1
+  if (!hasClass) this.el.className += ' is-focused'
 }
 /**
  * onBlur event handler
  */
 CustomSelect.prototype.onBlur = function () {
-  this.el.classList.remove('is-focused')
+  var hasClass = splitClass(this.el.className).indexOf('is-focused') > -1
+  if (hasClass) this.el.className = filterClass(this.el.className, 'is-focused')
 }
 /**
  * Get the actual text value of the selected option

@@ -1,6 +1,6 @@
 {
   "name": "blue-select",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple styled/custom html select class implementation",
   "main": "main.js",
   "scripts": {
@@ -26,5 +26,6 @@
     "standard": "^8.6.0",
     "standard-loader": "^5.0.0",
     "webpack": "^2.2.1"
-  }
+  },
+  "dependencies": {}
 }
