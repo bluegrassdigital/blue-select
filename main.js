@@ -64,7 +64,7 @@ CustomSelect.prototype.onBlur = function () {
  * Get the actual text value of the selected option
  */
 CustomSelect.prototype.getSelectedOptionText = function () {
-  return this.select.querySelectorAll('option')[this.select.selectedIndex].textContent
+  return this.select.querySelectorAll('option')[this.select.selectedIndex === -1 ? 0 : this.select.selectedIndex].textContent
 }
 /**
  * Set/update the 'fake' value of the select

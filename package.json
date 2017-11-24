@@ -1,6 +1,6 @@
 {
   "name": "blue-select",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple styled/custom html select class implementation",
   "main": "main.js",
   "scripts": {
