@@ -1,5 +1,7 @@
 # blue-select
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bluegrassdigital/blue-select.svg)](https://greenkeeper.io/)
+
 <p>A small, flexible custom select widget class. Works seamlessly with <a href="https://github.com/bluegrassdigital/blue-widgets" target="_blank">blue-widgets</a> or standalone.</p>
 
 Check out the [examples](https://bluegrassdigital.github.io/blue-select/#/page/docs/examples.md)
