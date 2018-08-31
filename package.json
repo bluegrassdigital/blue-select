@@ -23,9 +23,9 @@
     "blue-widgets"
   ],
   "devDependencies": {
-    "standard": "^8.6.0",
-    "standard-loader": "^5.0.0",
-    "webpack": "^2.2.1"
+    "standard": "^12.0.1",
+    "standard-loader": "^6.0.1",
+    "webpack": "^4.17.1"
   },
   "dependencies": {}
 }
