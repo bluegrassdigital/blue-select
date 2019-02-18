@@ -1,11 +1,15 @@
 {
   "name": "blue-select",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A simple styled/custom html select class implementation",
-  "main": "main.js",
+  "main": "dist/blue-select.js",
+  "umd:main": "dist/blue-select.umd.js",
+  "module": "dist/blue-select.mjs",
+  "source": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "microbundle --name 'BlueSelect'",
+    "dev": "microbundle watch",
+    "prepublishOnly": "npm run build"
   },
   "author": {
     "name": "Simon Buerger",
@@ -23,9 +27,7 @@
     "blue-widgets"
   ],
   "devDependencies": {
-    "standard": "^8.6.0",
-    "standard-loader": "^5.0.0",
-    "webpack": "^2.2.1"
+    "microbundle": "^0.9.0"
   },
   "dependencies": {}
 }

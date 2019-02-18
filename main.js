@@ -1,5 +1,3 @@
-'use strict'
-
 function splitClass (str) {
   return str.replace(/ {1,}/g, ',').split(',')
 }
@@ -73,4 +71,4 @@ CustomSelect.prototype.setFakeValue = function () {
   this.selectValue.innerHTML = this.getSelectedOptionText()
 }
 
-module.exports = CustomSelect
+export default CustomSelect;

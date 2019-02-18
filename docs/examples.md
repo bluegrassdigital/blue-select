@@ -1,10 +1,10 @@
 ## Normal
 
-<?codeembed seamless title="Result" size="iphone5s" base="docs/base.html" adjust-height use-html="select" scripts="../dist/blue-select.js,select.js" stylesheets="select.css"></codeembed?>
+<?codeembed seamless title="Result" size="iphone5s" base="docs/base.html" adjust-height use-html="select" scripts="../dist/blue-select.umd.js,select.js" stylesheets="select.css"></codeembed?>
 
 ## Disabled
 
-<?codeembed seamless title="Result" size="iphone5s" base="docs/base.html" adjust-height scripts="../dist/blue-select.js,select.js" stylesheets="select.css">
+<?codeembed seamless title="Result" size="iphone5s" base="docs/base.html" adjust-height scripts="../dist/blue-select.umd.js,select.js" stylesheets="select.css">
 <div class="select" id="Foo">
   <select disabled name="SomeSelect">
     <option value="">Please select</option>
